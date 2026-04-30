@@ -1,0 +1,25 @@
+/*This carries the css for destinations */
+.destination-input{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 2;
+    border-right: 1px solid #e0e0e0;
+    padding-right: 10px;
+}
+
+.destination-icon{
+   font-size: 18px;
+}
+
+.destination-field{
+    display: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+}
+
+.destination-field::placeholder{
+    color: #aaa;
+}

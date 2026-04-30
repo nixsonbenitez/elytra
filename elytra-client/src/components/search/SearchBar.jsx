@@ -16,5 +16,23 @@ function handleSearch(){
 }
 
 return(
-    <div className="search-bar"></div>
+    <div className="search-bar">
+    <DestinationInput
+        destination={destination}
+        setDestination={}
+    />
+    <DateRangePicker
+    dates={dates}
+    setDates ={setDates}
+    />
+
+    <GuestSelector
+        guest={guest}
+        setGuests={setGuests}
+    />
+
+    <button className="search-button" onClick={handleSearch}></button>
+    </div>
 )
+
+export default SearchBar;
