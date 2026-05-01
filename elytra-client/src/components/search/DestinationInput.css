@@ -9,7 +9,10 @@
 }
 
 .destination-icon{
+   height: 24px;
+   width: 24px;
    font-size: 18px;
+   object-fit: contain;
 }
 
 .destination-field{
@@ -18,8 +21,10 @@
     font-size: 14px;
     width: 100%;
     color: #333;
+    background: transparent;
 }
 
 .destination-field::placeholder{
     color: #aaa;
+    font-size: 14px;
 }
