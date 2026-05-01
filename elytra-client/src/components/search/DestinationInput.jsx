@@ -1,9 +1,9 @@
-import "./DestinationInput.css"
+import "./DestinationInput.css";
 
 function DestinationInput({destination, setDestination}){
     return(
         <div className="destination-input">
-            <span className="destination-icon">PIN</span>
+            <img src="/pin.png" alt="location pin" className="destination-icon" />
             <input
             type="text"
             placeholder="Where should we take you?"
@@ -12,5 +12,7 @@ function DestinationInput({destination, setDestination}){
             className="destination-field"
             />
         </div>
-    )
+    );
 }
+
+export default DestinationInput;

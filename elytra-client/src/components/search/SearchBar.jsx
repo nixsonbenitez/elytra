@@ -9,7 +9,7 @@ function SearchBar(){
     const[destination, setDestination] = useState("");
     const[dates, setDates] = useState ({departure: "", return: ""});
     const[guests, setGuests] = useState(1);
-}
+
 
 function handleSearch(){
     console.log("Search for:", {destination, dates, guests});
@@ -19,20 +19,22 @@ return(
     <div className="search-bar">
     <DestinationInput
         destination={destination}
-        setDestination={}
+        setDestination={setDestination}
     />
+
     <DateRangePicker
     dates={dates}
-    setDates ={setDates}
+    setDates={setDates}
     />
 
     <GuestSelector
-        guest={guest}
+        guests={guests}
         setGuests={setGuests}
     />
 
-    <button className="search-button" onClick={handleSearch}></button>
+    <button className="search-button" onClick={handleSearch}>🔍</button>
     </div>
-)
+    );
+}
 
 export default SearchBar;
